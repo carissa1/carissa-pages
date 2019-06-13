@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="balloon.js"></script>
+        <script src="wall.js"></script>
+        <script src="badGuy.js"></script>
+        <script src="player.js"></script>
+        <script src="game.js"></script>
+    </head>
+
+    <body onload="startGame()">
+        <br> <br> <br> <br>
+        <h1 id="h1" style = "display:none">YOU LOSE!!</h1>
+        <h1 id="h1b" style = "display:none">YOU WIN!!</h1>
+        <h1 id="h1c" style = "display:none">Balloon Pop!</h1>
+        <button id="btn" style = "display:none">Play Again?</button>
+        <button id="btn2" style= "display:none">Start</button>
+        <button id="btn3" style= "display:none">Instructions</button>
+        <div id="div3" style="display:none"></div>
+        <div id="div" style = "display:none">
+            1. arrow keys to move
+            <br>
+            2. do not let the falling objects touch the balloon
+            <br>
+            3. touch the obstacles first to make them disappear
+            <br>
+            4. completely fill in the progress bar to win!           
+        </div>
+        <div id="div2" style="display:none"></div>
+        <a id="back" style = "display:none" href="index.html">back</a>
+        <canvas width="500px" height="500px" id="gc">
+        </canvas>
+    </body>
+</html>
